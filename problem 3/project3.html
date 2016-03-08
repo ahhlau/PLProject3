@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script src="project3.js"></script>
+    <link rel="stylesheet" type="text/css" href="project3.css">
+    <title></title>
+</head>
+<body>
+    <h1>Welcome to the Person Tester Application</h1>
+    <h2>Would you like to create a new customer or employee?</h2>
+    <button id="buttonC">Customer</button>
+    <button id="buttonE">Employee</button>
+    <form class="myform" id="customer">
+        First name:
+        <br>
+        <input type="text" name="firstname" required>
+        <br> Last name:
+        <br>
+        <input type="text" name="lastname" required>
+        <br> Email:
+        <br>
+        <input type="email" name="email" required>
+        <br> Customer number:
+        <br>
+        <input type="text" name="cusNum" required>
+        <br>
+        <input type="submit" value="Submit">
+    </form>
+    <form class="myform" id="employee">
+        First name:
+        <br>
+        <input type="text" name="firstname" required>
+        <br> Last name:
+        <br>
+        <input type="text" name="lastname" required>
+        <br> Email:
+        <br>
+        <input type="email" name="email" required>
+        <br> Social security number:
+        <br>
+        <input type="text" name="ssNum" placeholder="555-55-5555" pattern="\d{3}-?\d{2}-?\d{4}" required>
+        <br>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
